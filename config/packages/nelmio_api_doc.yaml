@@ -1,0 +1,6 @@
+nelmio_api_doc:
+  documentation:
+    info:
+      title: "API Documentation"
+      description: "Detailed API documentation for the metricalo test"
+      version: "1.0.0"

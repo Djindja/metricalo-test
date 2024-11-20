@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe784d6-c0c9-4f56-a818-f6f01fbaedd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/ProcessPaymentCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DTO/PaymentResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/PaymentProcessor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Command/ProcessPaymentCommandTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Controller/PaymentControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/Service/PaymentProcessorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/metricalo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/metricalo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php-test-framework.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/bin/php">
     <include_path>
@@ -105,6 +108,15 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/api-doc-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpdoc-parser" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -115,27 +127,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;PHPUnit.PaymentControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.PaymentControllerTest.testProcessPaymentThrowsException.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.PaymentControllerTest.testProcessPaymentWithInvalidSystem.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.PaymentControllerTest.testProcessPaymentWithValidSystem.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.PaymentProcessorTest.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.ProcessPaymentCommandTest.executor&quot;: &quot;Run&quot;,
-    &quot;PHPUnit.ProcessPaymentCommandTest.testExecuteWithValidSystem.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/djindja/projects/metricalo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "PHPUnit.PaymentControllerTest.executor": "Run",
+    "PHPUnit.PaymentControllerTest.testProcessPaymentThrowsException.executor": "Run",
+    "PHPUnit.PaymentControllerTest.testProcessPaymentWithInvalidSystem.executor": "Run",
+    "PHPUnit.PaymentControllerTest.testProcessPaymentWithValidSystem.executor": "Run",
+    "PHPUnit.PaymentProcessorTest.executor": "Run",
+    "PHPUnit.ProcessPaymentCommandTest.executor": "Run",
+    "PHPUnit.ProcessPaymentCommandTest.testExecuteWithValidSystem.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/djindja/projects/metricalo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="PHPUnit.PaymentControllerTest">
     <configuration name="PaymentControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="App\Tests\Controller\PaymentControllerTest" file="$PROJECT_DIR$/src/Tests/Controller/PaymentControllerTest.php" scope="Class" />
@@ -184,7 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731957181482</updated>
       <workItem from="1731957185278" duration="14580000" />
-      <workItem from="1732105527687" duration="2998000" />
+      <workItem from="1732105527687" duration="5050000" />
     </task>
     <servers />
   </component>
