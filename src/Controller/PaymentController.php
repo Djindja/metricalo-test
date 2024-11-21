@@ -49,13 +49,13 @@ class PaymentController extends AbstractController
      *         @OA\JsonContent(
      *             type="object",
      *             @OA\Property(property="currency", type="string"),
-     *             @OA\Property(property="id", type="string"),
-     *             @OA\Property(property="source", type="string"),
-     *             @OA\Property(property="date", type="string"),
-     *             @OA\Property(property="expiryYear", type="integer"),
-     *             @OA\Property(property="expiryMonth", type="integer"),
+     *             @OA\Property(property="transactionId", type="string"),
+     *             @OA\Property(property="cardNumber", type="string"),
+     *             @OA\Property(property="creationDate", type="string"),
+     *             @OA\Property(property="cardExpYear", type="integer"),
+     *             @OA\Property(property="cardExpMonth", type="integer"),
      *             @OA\Property(property="amount", type="number", format="float"),
-     *             @OA\Property(property="cvv", type="string")
+     *             @OA\Property(property="cardCvv", type="string")
      *         )
      *     ),
      *     @OA\Response(
