@@ -10,6 +10,7 @@ class PaymentResponse
     public string $creationDate;
     public int $cardExpYear;
     public int $cardExpMonth;
+
     public float $amount;
     public string $cardCvv;
 

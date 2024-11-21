@@ -19,7 +19,7 @@ class ProcessPaymentCommand extends Command
         $this->paymentProcessor = $paymentProcessor;
     }
 
-    protected static $defaultName = 'app:example';
+    protected static $defaultName = 'app:payment';
 
     protected function configure(): void
     {

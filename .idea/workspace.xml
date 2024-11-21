@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe784d6-c0c9-4f56-a818-f6f01fbaedd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Command/ProcessPaymentCommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Controller/PaymentControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Controller/PaymentControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/Service/PaymentProcessorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Service/PaymentProcessorTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/ProcessPaymentCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ProcessPaymentCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DTO/PaymentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PaymentResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/PaymentProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/PaymentProcessor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +131,7 @@
     "PHPUnit.PaymentControllerTest.testProcessPaymentWithInvalidSystem.executor": "Run",
     "PHPUnit.PaymentControllerTest.testProcessPaymentWithValidSystem.executor": "Run",
     "PHPUnit.PaymentProcessorTest.executor": "Run",
+    "PHPUnit.ProcessPaymentCommandTest (1).executor": "Run",
     "PHPUnit.ProcessPaymentCommandTest.executor": "Run",
     "PHPUnit.ProcessPaymentCommandTest.testExecuteWithValidSystem.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -148,7 +151,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.PaymentControllerTest (1)">
+  <component name="RunManager" selected="PHPUnit.ProcessPaymentCommandTest (1)">
     <configuration name="PaymentControllerTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="App\Tests\Controller\PaymentControllerTest" file="$PROJECT_DIR$/tests/Controller/PaymentControllerTest.php" scope="Class" />
       <method v="2" />
@@ -157,8 +160,8 @@
       <TestRunner class="App\Tests\Controller\PaymentControllerTest" file="$PROJECT_DIR$/src/Tests/Controller/PaymentControllerTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="PaymentProcessorTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="App\Tests\Service\PaymentProcessorTest" file="$PROJECT_DIR$/src/Tests/Service/PaymentProcessorTest.php" scope="Class" />
+    <configuration name="ProcessPaymentCommandTest (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Command\ProcessPaymentCommandTest" file="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="ProcessPaymentCommandTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -171,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ProcessPaymentCommandTest (1)" />
         <item itemvalue="PHPUnit.PaymentControllerTest (1)" />
         <item itemvalue="PHPUnit.ProcessPaymentCommandTest.testExecuteWithValidSystem" />
         <item itemvalue="PHPUnit.ProcessPaymentCommandTest" />
         <item itemvalue="PHPUnit.PaymentControllerTest" />
-        <item itemvalue="PHPUnit.PaymentProcessorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +200,7 @@
       <updated>1731957181482</updated>
       <workItem from="1731957185278" duration="14580000" />
       <workItem from="1732105527687" duration="9978000" />
-      <workItem from="1732183155551" duration="230000" />
+      <workItem from="1732183155551" duration="8907000" />
     </task>
     <servers />
   </component>

@@ -36,7 +36,7 @@ class ProcessPaymentCommandTest extends TestCase
         $application = new Application();
         $application->add($command);
 
-        $commandTester = new CommandTester($application->find('app:example'));
+        $commandTester = new CommandTester($application->find('app:payment'));
         $commandTester->execute([
             'system' => 'shift4',
             'amount' => 100.0,
@@ -58,7 +58,7 @@ class ProcessPaymentCommandTest extends TestCase
         $application = new Application();
         $application->add($command);
 
-        $commandTester = new CommandTester($application->find('app:example'));
+        $commandTester = new CommandTester($application->find('app:payment'));
         $commandTester->execute([
             'system' => 'invalid',
             'amount' => 100.0,
@@ -81,7 +81,7 @@ class ProcessPaymentCommandTest extends TestCase
         $application = new Application();
         $application->add($command);
 
-        $commandTester = new CommandTester($application->find('app:example'));
+        $commandTester = new CommandTester($application->find('app:payment'));
         $commandTester->execute([
             'system' => 'shift4',
             'amount' => 100.0,

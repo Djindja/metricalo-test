@@ -1,9 +1,10 @@
 <?php
-// src/Service/PaymentProcessor.php
+
 namespace App\Service;
 
 use App\DTO\PaymentResponse;
 use InvalidArgumentException;
+use RuntimeException;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
@@ -48,19 +49,32 @@ class PaymentProcessor
     private function processShift4Payment(float $amount): PaymentResponse
     {
         $url = 'https://api.shift4.com/v1/charges';
-        $authKey = 'sk_test_xxxxxxxxxxxxx';
+        $authKey = $_ENV['SHIFT4_PRIVATE_KEY'] ?? null;
+
+        if (!$authKey) {
+            throw new RuntimeException('SHIFT4_PRIVATE_KEY environment variable is not set.');
+        }
 
         $response = $this->client->request('POST', $url, [
-            'auth_bearer' => $authKey,
+            'headers' => [
+                'Authorization' => 'Bearer ' . $authKey,
+                'Content-Type' => 'application/json'
+            ],
             'json' => [
                 'amount' => $amount * 100,
                 'currency' => 'USD',
                 'source' => [
+                    'type' => 'card',
                     'number' => '4242000000000083',
                     'expMonth' => 12,
                     'expYear' => 2025,
                     'cvc' => '123',
                 ],
+                'capture' => true,
+                'description' => 'Test charge',
+                'metadata' => [
+                    'order_id' => '6735'
+                ]
             ],
         ]);
 
@@ -88,12 +102,18 @@ class PaymentProcessor
     private function processAciPayment(float $amount): PaymentResponse
     {
         $url = 'https://test.oppwa.com/v1/payments';
-        $authKey = 'Bearer OAUTH_TOKEN';
+        $authKey = $_ENV['ACI_PRIVATE_KEY'] ?? null;;
         $entityId = '8ac7a4c8767432d501767474c18e0222';
+
+        if (!$authKey) {
+            throw new RuntimeException('ACI_PRIVATE_KEY environment variable is not set.');
+        }
+
 
         $response = $this->client->request('POST', $url, [
             'headers' => [
-                'Authorization' => $authKey,
+                'Authorization' => 'Bearer ' . $authKey,
+                'Content-Type' => 'application/json'
             ],
             'json' => [
                 'entityId' => $entityId,
