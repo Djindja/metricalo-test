@@ -6,6 +6,11 @@ use App\DTO\PaymentResponse;
 use App\Service\PaymentProcessor;
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
+use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
@@ -13,6 +18,11 @@ class PaymentProcessorTest extends TestCase
 {
     /**
      * @throws Exception
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessShift4Payment()
     {
@@ -41,7 +51,12 @@ class PaymentProcessorTest extends TestCase
     }
 
     /**
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
      * @throws Exception
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessAciPayment()
     {
@@ -69,7 +84,12 @@ class PaymentProcessorTest extends TestCase
     }
 
     /**
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
      * @throws Exception
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessPaymentWithInvalidSystem()
     {

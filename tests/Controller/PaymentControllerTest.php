@@ -9,11 +9,21 @@ use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 class PaymentControllerTest extends TestCase
 {
     /**
      * @throws Exception
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessPaymentWithValidSystem()
     {
@@ -64,7 +74,12 @@ class PaymentControllerTest extends TestCase
     }
 
     /**
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
      * @throws Exception
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessPaymentWithInvalidSystem()
     {
@@ -81,7 +96,12 @@ class PaymentControllerTest extends TestCase
     }
 
     /**
+     * @throws ClientExceptionInterface
+     * @throws DecodingExceptionInterface
      * @throws Exception
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
      */
     public function testProcessPaymentThrowsException()
     {
