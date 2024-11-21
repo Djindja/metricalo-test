@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fe784d6-c0c9-4f56-a818-f6f01fbaedd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/ProcessPaymentCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/ProcessPaymentCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DTO/PaymentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DTO/PaymentResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/PaymentProcessor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/PaymentProcessor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Command/ProcessPaymentCommandTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +194,7 @@
       <updated>1731957181482</updated>
       <workItem from="1731957185278" duration="14580000" />
       <workItem from="1732105527687" duration="9978000" />
-      <workItem from="1732183155551" duration="8907000" />
+      <workItem from="1732183155551" duration="9471000" />
     </task>
     <servers />
   </component>
